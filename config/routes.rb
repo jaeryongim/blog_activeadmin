@@ -1,4 +1,5 @@
 Blog::Application.routes.draw do
+  devise_for :managers
   devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
